@@ -1,9 +1,10 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 function Child(props) {
     return (
         <div>
             <h5>This is child component</h5>
-            <button variant='primary' onClick={props.data}>Call Data form Function</button>
+           <Button className="btn-btm-primary" onClick={props.data}>Call Data form Function</Button>
         </div>
     )
 }

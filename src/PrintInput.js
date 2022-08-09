@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Button from 'react-bootstrap/Button';
 function PrintInput() {
 
     const [data, setData] = useState()
@@ -18,7 +18,7 @@ function PrintInput() {
                     <h4>{data}</h4> : null
             }
             <input type='text' onChange={getData} />
-            <button variant="primary" onClick={() => setPrint(true)}>Print Data</button>
+            <Button variant="primary" onClick={() => setPrint(true)}>Print Data</Button>
         </div>
     )
 }

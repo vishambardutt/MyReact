@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 class LfChid extends React.Component{
     constructor(){
         super();
@@ -13,7 +14,7 @@ class LfChid extends React.Component{
             <div>
             <h5>Lf child Component</h5>
             <h5>{this.props.name}</h5>
-            <button onClick={()=>this.setState({email:'Kavita@yahoo.com'})}>Change state</button>
+            <Button class="btn-btn-primary" onClick={()=>this.setState({email:'Kavita@yahoo.com'})}>Change state</Button>
             </div>
         )
 

@@ -15,6 +15,7 @@ import './App.css';
 import PrintInput from './PrintInput';
 import Childp from './Childp';
 import Welcome from './Welcome';
+import Button from 'react-bootstrap/Button';
 
 function Header() {
   return (
@@ -36,7 +37,7 @@ function Header() {
                 <Nav.Link href="#pricing" ><Link class="nav-link" to='/PrintInput'>Print Input</Link></Nav.Link>
                 <Nav.Link href="#pricing" ><Link class="nav-link" to='/Childp'>Childp</Link></Nav.Link>
                 <Nav.Link href="#pricing" ><Link class="nav-link" to='/Welcome'>Welcome</Link></Nav.Link>
-                
+                            
               </Nav>
             </Container>
           </Navbar>
@@ -62,3 +63,4 @@ function Header() {
 }
 
 export default Header;
+

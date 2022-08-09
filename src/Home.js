@@ -10,6 +10,9 @@ import LifeCycle from './LifeCycle';
 import LfChild from './LfChild';
 import ShouldCompoentUpdate from './ShouldComponentUpdate';
 import Welcome from './Welcome';
+import ShowHide from './ShowHide';
+import Myfm from './Myfm';
+import LiftingState from './LiftingState';
 
 function Home() {
   const [names, setNames] = useState('Hi Ankit')
@@ -29,7 +32,7 @@ function Home() {
       <Button variant="primary" onClick={() => { setNames('Hello Mohit') }}>Change State</Button>{' '}
       <h5><Child data={getdata} />  </h5>
       <div>
-        <h5><Child2 data={getdata} /></h5>
+        {/* <h5><Child2 data={getdata} /></h5> */}
       </div>
       {/* <button variant="primary" onClick={() => { setNames('Hello Mohit') }}>Change Name</button>{' '} */}
 
@@ -41,11 +44,20 @@ function Home() {
       <h5><LifeCycle/></h5>
       <h5><LfChild/></h5>
       <h5><ShouldCompoentUpdate/></h5>
-      <Welcome name="Sara" />
-        <Welcome name="Cahal" />
-        <Welcome name="Edite" />
-
-
+      <div class="row">
+        <h6>
+          <Welcome name="Sara" />
+          <Welcome name="Cahal" />
+          <Welcome name="Edite" /></h6>
+        </div> 
+        <h5><ShowHide/></h5>
+        <h5><Myfm /></h5>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">First Row</div><div class="col-sm-6">Second Row</div>
+          </div>
+        </div>
+        <LiftingState/>
     </div>
   )
 }

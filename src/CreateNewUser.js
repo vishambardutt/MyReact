@@ -17,7 +17,7 @@ function CreateNewUser (){
              <p><input type="text" onChange={(e)=>setName(e.target.value)} name='username' value={name}/></p>
              <p><input type="text" onChange={(e)=>setAge(e.target.value)}  name='age' value={age}/></p>
              <p><input type="text" onChange={(e)=>setAddress(e.target.value)}  name='address' value={address}/></p>
-           <button onClick = {makeUser}>Create User</button>
+           <Button class="btn-btn-primary" onClick = {makeUser}>Create User</Button>
         </div>
     )
 }

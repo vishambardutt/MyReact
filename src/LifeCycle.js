@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 class LifeCycle extends React.Component {
     constructor()
     {
@@ -8,10 +9,10 @@ class LifeCycle extends React.Component {
     render() {
         return(
             <div>
-                <h4>React Life Cycle Method</h4>
-                <h5><button class="btn-btn-primary">Load Product</button></h5>
-                <h5><button class="btn-btn-primary">Update Product</button></h5>
-                <h5><button class="btn-btn-primary">Remove Product</button></h5>
+                <h5>React Life Cycle Method</h5>
+                <h5><Button variant='primary'>Load Product</Button></h5>
+                <h5><Button variant='primary'>Update Product</Button></h5>
+                <h5><Button variant='primary'>Remove Product</Button></h5>
             </div >   
     )
     }
