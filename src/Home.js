@@ -52,6 +52,7 @@ function Home() {
         </div> 
         <h5><ShowHide/></h5>
         <h5><Myfm /></h5>
+        <h5><Child2 /></h5>
         <div class="container">
           <div class="row">
             <div class="col-sm-6">First Row</div><div class="col-sm-6">Second Row</div>
