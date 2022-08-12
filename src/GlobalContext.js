@@ -7,11 +7,16 @@ export const Globalcontext = createContext();
 function GlobalContext() {
 
     const [color, setColor] = useState('red')
+    const [name, setName] = useState('Jakhmola')
+    const getName =(item)=>{
+        setName(item)
+        console.log(item);
+    }
 
     return (
-        <Globalcontext.Provider value= {{Color: color}} >
+        <Globalcontext.Provider value= {{Color: color, getName:getName}} >
         <div>
-        <h6>Global Context</h6>
+        <h6>Global Context {name}</h6>
         </div>
         <GlobalChild/>
         <GlobalOtherChild/>
