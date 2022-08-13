@@ -1,12 +1,16 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+
 function Member(props){
-   const data = {email:'vd@yahoo.com', name:'vd'}
+   const data = 'vishambar'
     return(
+        
+       
         <div>
-            <h6>Member </h6>
-            <Button class="btn-btn-primary"  onClick={()=>props.alert(data)}>Click Me</Button>
+            {/* <h6>Member Name: {props.name}</h6> */}
+            <h6><Button class="btn-btn-primary"  onClick={()=>props.alert(data)}>lifting state</Button></h6> 
         </div>
+       
     )
 }
 

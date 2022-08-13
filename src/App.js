@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
-import GlobalContext from './GlobalContext';
+// import GlobalContext from './GlobalContext';
+// import A from './A';
 function App() {
 
   return (
@@ -12,7 +13,8 @@ function App() {
           <Header />
         </div>
         <div class="row">
-<GlobalContext/>
+{/* <GlobalContext/> */}
+{/* <A/> */}
         </div>
         <div class="row">
           <Footer />

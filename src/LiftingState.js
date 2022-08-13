@@ -1,18 +1,20 @@
 import React from 'react';
 import Member from "./Member";
+import PropsFun from './PropsFun';
 
-function LiftingState(){
-    
-    function parentalert(data){
+function LiftingState() {
 
-        alert('data');
+    function liftalert(data) {
+        // console.log(data)
+        // alert('data.name');
+        
+     }
+       
 
-    }
-
-    return(
+    return (
         <div>
-          <h6>Lifting State Up</h6>
-          <Member  alert={parentalert} />
+            <h6>Lifting State Up</h6>
+            <Member alert = {liftalert} />
 
         </div>
     )

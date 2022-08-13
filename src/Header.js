@@ -10,13 +10,14 @@ import Home from './Home';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import { BrowserRouter as Router, Route, Link, Routes, } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Routes,} from 'react-router-dom';
 import './App.css';
 import PrintInput from './PrintInput';
 import Childp from './Childp';
 import Welcome from './Welcome';
 import Button from 'react-bootstrap/Button';
-
+import LiftingState from './LiftingState';
+import PageNotFound from './PageNotFound';
 function Header() {
   return (
     <div>
@@ -37,6 +38,7 @@ function Header() {
                 <Nav.Link href="#pricing" ><Link class="nav-link" to='/PrintInput'>Print Input</Link></Nav.Link>
                 <Nav.Link href="#pricing" ><Link class="nav-link" to='/Childp'>Childp</Link></Nav.Link>
                 <Nav.Link href="#pricing" ><Link class="nav-link" to='/Welcome'>Welcome</Link></Nav.Link>
+                {/* <Nav.Link href="#pricing" ><Link class="nav-link" to='/LiftingState'>Lifting State</Link></Nav.Link> */}
                             
               </Nav>
             </Container>
@@ -51,11 +53,12 @@ function Header() {
             <Route path="/changepropsclasscomp" element={<ChangePropsClassComp />} />
             <Route path="/printinput" element={<PrintInput />} />
             <Route path="/childp" element={<Childp />} />
-            <Route path="/welcome" element={<Welcome />} />
-            
+             <Route path="/welcome" element={<Welcome />}/>
+            {/* <Route path="/liftingstate" element={<LiftingState />} /> */}
+            <Route path="*" element={<PageNotFound />} />
             <Route path="/" element={<Home />} />
           </Routes>
-        </Router>
+         </Router>
       </div>
     </div>
 

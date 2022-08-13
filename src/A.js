@@ -17,6 +17,7 @@ class A extends Component {
   render() {
     return (
         <React.Fragment>
+          <h6>This is A Parent</h6>
           <B text={this.state.text} 
              handleTextChange={this.handleTextChange}/>
           <C text={this.state.text} />
