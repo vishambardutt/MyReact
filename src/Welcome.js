@@ -1,6 +1,5 @@
 import React from 'react';
-import A from './A';
-import P from './P';
+
 function Welcome(props) {
     return (
       <div class="container">
@@ -9,7 +8,7 @@ function Welcome(props) {
 </div>
       <div>
         <h6>Hello, {props.name}</h6>
-        <P/>
+       
       </div>
 </div>
     )

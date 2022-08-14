@@ -3,7 +3,7 @@ import Child from './Child';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 import './App.css';
-
+import FunctionPure from './functionPure';
  function Parent() {
   const [data, setData] = useState('');
   

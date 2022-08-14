@@ -1,7 +1,5 @@
 import React from 'react';
 import Member from "./Member";
-import PropsFun from './PropsFun';
-
 function LiftingState() {
 
     function liftalert(data) {
