@@ -13,8 +13,9 @@ function App() {
           <Header />
         </div>
         <div class="row">
-{/* <GlobalContext/> */}
-{/* <A/> */}
+          {/* <GlobalContext/> */}
+
+          {/* <A/> */}
         </div>
         <div class="row">
           <Footer />

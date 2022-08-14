@@ -11,7 +11,7 @@ class Pc extends React.PureComponent {
         console.log('check re-rendering')
         return (
             <div>
-                <h2>Pure Component {this.state.count}</h2>
+                <h5>Pure Component {this.state.count}</h5>
                 <Button onClick={()=>this.setState({count:this.state.count+1})}>Update Count</Button>
             </div >
         )
