@@ -7,10 +7,4 @@ function CreatUser () {
         </div>
     )
 }
-
-
-
-
-
-
 export default CreatUser; 

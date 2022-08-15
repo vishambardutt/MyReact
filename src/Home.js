@@ -14,10 +14,13 @@ import ShowHide from './ShowHide';
 import Myfm from './Myfm';
 import LiftingState from './LiftingState';
 import ReuseComponent from './ReuseComponent';
-import ComponentWillUnmount from './ComponentWillUnmount';
+// import ComponentWillUnmount from './ComponentWillUnmount';
 import Pc from './Pc';
 import PureComponentinProps from './PureComponentinProps';
 import MemoFunctionComp from './MemoFunctionalComp';
+import ControlledComponent from './ControlledComponent';
+import UnControlledComponent from './UnControlledComponent';
+import RefComponent from './RefComponent';
 
 function Home() {
   const [names, setNames] = useState('Hi Ankit')
@@ -39,8 +42,13 @@ function Home() {
             <div class="col-sm-3"><HOCBlue comp ={HighOrder}/></div>
           </div>
           <div class="row">
-            <div class="col-sm-12"><MemoFunctionComp/></div>
-           
+            <div class="col-sm-12"><MemoFunctionComp/></div>       
+        </div>
+        <div class="row ">
+          <div class="col-sm-6"><ControlledComponent/></div><div class="col-sm-6"><UnControlledComponent/></div>
+        </div>
+        <div class="row ">
+          <div class="col-sm-6"><RefComponent/></div><div class="col-sm-6">kk</div>
         </div>
           
         <div class="row">

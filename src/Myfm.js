@@ -1,6 +1,4 @@
 import React,{useState} from "react";
-import * as ReactDOM from "react-dom";
-import { Col, Row } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 function Myfm(){
     const [name,setName]= useState('')

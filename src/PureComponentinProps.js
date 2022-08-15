@@ -2,12 +2,11 @@ import React, { PureComponent } from 'react';
 import Button from 'react-bootstrap/Button';
 import PureC from './PureC';
 
-class PureComponentinProps extends React.Component {
+class PureComponentinProps extends PureComponent {
     constructor() {
         super();
         this.state = {
             count: 1
-
         }
 
     }
@@ -21,9 +20,5 @@ class PureComponentinProps extends React.Component {
         );
 
     }
-
-
 }
-
-
 export default PureComponentinProps;

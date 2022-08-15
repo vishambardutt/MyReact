@@ -1,16 +1,16 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 function UseState() {
-    const [data,setData] = useState('Hello I am rect State')
+    const [data, setData] = useState('Hello I am rect State')
 
-    function updateData(){
+    function updateData() {
         setData('Hi react state changed')
     }
-    return(
+    return (
         <div>
             <h4>Use State in Functional Component</h4>
             <h5>{data}</h5>
-        <Button onClick={updateData}> Update Data </Button>
+            <Button onClick={updateData}> Update Data </Button>
         </div>
     );
 }

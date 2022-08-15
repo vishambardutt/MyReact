@@ -14,8 +14,7 @@ import { BrowserRouter as Router, Route, Link, Routes,} from 'react-router-dom';
 import './App.css';
 import PrintInput from './PrintInput';
 import Childp from './Childp';
-import Welcome from './Welcome';
-import Button from 'react-bootstrap/Button';
+// import Welcome from './Welcome';
 // import LiftingState from './LiftingState';
 import PageNotFound from './PageNotFound';
 function Header() {
