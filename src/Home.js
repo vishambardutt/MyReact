@@ -21,6 +21,9 @@ import MemoFunctionComp from './MemoFunctionalComp';
 import ControlledComponent from './ControlledComponent';
 import UnControlledComponent from './UnControlledComponent';
 import RefComponent from './RefComponent';
+import UseState from './UseState';
+import UseEffect from './UseEffect';
+import ComponentWillUnmount from './ComponentWillUnmount';
 
 function Home() {
   const [names, setNames] = useState('Hi Ankit')
@@ -41,14 +44,18 @@ function Home() {
             <div class="col-sm-3"><HOCYellow comp ={HighOrder}/></div>
             <div class="col-sm-3"><HOCBlue comp ={HighOrder}/></div>
           </div>
+          <div class="row ">
+          <div class="col-sm-6"><ComponentWillUnmount/></div><div class="col-sm-6"></div>
+        </div>
           <div class="row">
-            <div class="col-sm-12"><MemoFunctionComp/></div>       
+            <div class="col-sm-6"><MemoFunctionComp/></div>
+            <div class="col-sm-6"><UseEffect/></div>   
         </div>
         <div class="row ">
           <div class="col-sm-6"><ControlledComponent/></div><div class="col-sm-6"><UnControlledComponent/></div>
         </div>
         <div class="row ">
-          <div class="col-sm-6"><RefComponent/></div><div class="col-sm-6">kk</div>
+          <div class="col-sm-6"><RefComponent/></div><div class="col-sm-6"><UseState/></div>
         </div>
           
         <div class="row">

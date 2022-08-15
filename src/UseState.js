@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
+
 function UseState() {
     const [data, setData] = useState('Hello I am rect State')
 
@@ -8,9 +9,9 @@ function UseState() {
     }
     return (
         <div>
-            <h4>Use State in Functional Component</h4>
+            <h5>Use State in Functional Component</h5>
             <h5>{data}</h5>
-            <Button onClick={updateData}> Update Data </Button>
+            <Button onClick={updateData}> Ckick for State Change </Button>
         </div>
     );
 }
