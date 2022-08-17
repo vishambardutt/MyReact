@@ -14,17 +14,18 @@ import ShowHide from './ShowHide';
 import Myfm from './Myfm';
 import LiftingState from './LiftingState';
 import ReuseComponent from './ReuseComponent';
-// import ComponentWillUnmount from './ComponentWillUnmount';
 import Pc from './Pc';
 import PureComponentinProps from './PureComponentinProps';
 import MemoFunctionComp from './MemoFunctionalComp';
 import ControlledComponent from './ControlledComponent';
 import UnControlledComponent from './UnControlledComponent';
 import RefComponent from './RefComponent';
-import UseState from './UseState';
+import UseState from './ChangeStateinFunctionalComp';
 import UseEffect from './UseEffect';
 import ComponentWillUnmount from './ComponentWillUnmount';
-
+import ChangeState from './ChangeState';
+import ChangeStateinFunctionalComp from './ChangeStateinFunctionalComp';
+import ConditionalRendering from './ConditionalRendering';
 function Home() {
   const [names, setNames] = useState('Hi Ankit')
 
@@ -39,77 +40,51 @@ function Home() {
       <h4>Home Component</h4>
         <div class="container">
         <div class="row">
-            <div class="col-sm-3"><HOCOrange comp ={HighOrder}/></div>
-            <div class="col-sm-3"><HOCGreen comp ={HighOrder}/></div>
-            <div class="col-sm-3"><HOCYellow comp ={HighOrder}/></div>
-            <div class="col-sm-3"><HOCBlue comp ={HighOrder}/></div>
+            <div class="col-sm-4"><HOCOrange comp ={HighOrder}/></div>
+            <div class="col-sm-4"><HOCGreen comp ={HighOrder}/></div>
+            <div class="col-sm-4"><HOCYellow comp ={HighOrder}/></div>
+            
           </div>
           <div class="row ">
-          <div class="col-sm-6"><ComponentWillUnmount/></div><div class="col-sm-6"></div>
+          <div class="col-sm-4"><ComponentWillUnmount/></div><div class="col-sm-4"><ConditionalRendering/></div><div class="col-sm-4"><MemoFunctionComp/></div>
         </div>
           <div class="row">
-            <div class="col-sm-6"><MemoFunctionComp/></div>
-            <div class="col-sm-6"><UseEffect/></div>   
-        </div>
+            <div class="col-sm-4"><ControlledComponent/></div>  <div class="col-sm-4"><UseEffect/></div>  <div class="col-sm-4"><UnControlledComponent/></div>
+         </div>
+        
         <div class="row ">
-          <div class="col-sm-6"><ControlledComponent/></div><div class="col-sm-6"><UnControlledComponent/></div>
+          <div class="col-sm-4"><RefComponent/></div><div class="col-sm-4"><UseState/></div><div class="col-sm-4"><PureComponentinProps/></div>
         </div>
-        <div class="row ">
-          <div class="col-sm-6"><RefComponent/></div><div class="col-sm-6"><UseState/></div>
-        </div>
-          
+          <div class="row">
+            <div class="col-sm-4"><ChangeState/></div><div class="col-sm-4"><HighOrder/></div><div class="col-sm-4"><HighOrder/></div>
+          </div>
         <div class="row">
-            <div class="col-sm-6"><HighOrder/></div>
-            <div class="col-sm-6"><HighOrder/></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6"><PureComponentinProps/></div>
-            <div class="col-sm-6"><Pc/></div>
+            <div class="col-sm-4"> <ChangePropsClassComp name1='Vartika is name1' name2='Yutika is name2' /></div><div class="col-sm-4"> <PropsinClassCom pname="Props Name in Class comp" email=" Email in class Comp" /></div><div class="col-sm-4"> <PropsFun name="Vishambar " email="vd@yahoo.com" address="ET Raod Banglore" />
+              <Button variant="primary" onClick={() => { setNames('Hello Mohit') }}>Change Name</Button></div>
+            
         </div>
         <div class="row">
-            <div class="col-sm-6">
-                <ChangePropsClassComp name1='Vartika is name1' name2='Yutika is name2' />
-            </div>
-            <div class="col-sm-6">
-              <PropsinClassCom pname="Props Name in Class comp" email=" Email in class Comp" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-              <PropsFun name="Vishambar " email="vd@yahoo.com" address="ET Raod Banglore" />
-              <Button variant="primary" onClick={() => { setNames('Hello Mohit') }}>Change Name</Button>
-            </div>
-            <div class="col-sm-6"> <Welcome name="Sara" />
+            <div class="col-sm-4">
+              <Welcome name="Sara" />
               <Welcome name="Cahal" />
               <Welcome name="Edite" />
             </div>
+            <div class="col-sm-4"><PropsFun name={names} />
+              <Button variant="primary" onClick={() => { setNames('Hello Mohit') }}>Change State</Button></div>
+            <div class="col-sm-4"><Child data={getdata} /></div>
+           
+        </div>
+        <div class="row">
+            <div class="col-sm-4"> <ReuseComponent/></div><div class="col-sm-4"><PrintInput /></div><div class="col-sm-4"><Myfm /></div>
         </div>
           <div class="row">
-            <div class="col-sm-6">
-              <PropsFun name={names} />
-              <Button variant="primary" onClick={() => { setNames('Hello Mohit') }}>Change State</Button>
+            <div class="col-sm-4"><ShouldCompoentUpdate/></div>
+            <div class="col-sm-4"> <LiftingState/></div><div class="col-sm-4"><Child2 /></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4"><ShowHide/></div><div class="col-sm-4"><LfChild/></div><div class="col-sm-4"><LifeCycle/></div>
             </div>
-            <div class="col-sm-6">
-                <LiftingState/>
-            </div>
           </div>
-          <div class="row">
-            <div class="col-sm-6"><Child data={getdata} /></div><div class="col-sm-6"></div>
-            </div>
-
-          <div class="row">
-            <div class="col-sm-6"> <ReuseComponent/></div><div class="col-sm-6"><PrintInput /></div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6"> <Child2 /></div><div class="col-sm-6"><Myfm /></div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6"><ShowHide/></div><div class="col-sm-6"><ShouldCompoentUpdate/></div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6"><LfChild/></div><div class="col-sm-6"><LifeCycle/></div>
-          </div>
-        </div>
       
       </div>
      )
