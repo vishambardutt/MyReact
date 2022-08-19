@@ -5,7 +5,7 @@ function ReuseData(props){
     return (
         <div>
            
-            <h6>{props.data.Name} {props.data.Email} {props.data.contact}</h6>
+            <h6>Reuse Data{props.data.Name} {props.data.Email} {props.data.contact}</h6>
         </div>
     )
 }

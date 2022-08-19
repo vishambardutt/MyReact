@@ -11,11 +11,11 @@ class PureComponentinProps extends PureComponent {
 
     }
     render() {
-
+        console.log('Pure Component')
         return (
             <div>
                 <h5><PureC count={this.state.count} /></h5>
-                <h5><Button onClick={() => this.setState({ count: this.state.count + 1 })} > Pudate Count</Button></h5>
+                <h5><Button onClick={() => this.setState({ count: this.state.count + 1 })} > Update Count</Button></h5>
             </div >
         );
 

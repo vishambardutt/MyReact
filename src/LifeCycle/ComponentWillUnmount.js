@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
-import StudentUnmount from './StudentUnmount';
+import StudentUnmount from '../StudentUnmount';
 class ComponentWillUnmount extends React.Component {
 
     constructor()

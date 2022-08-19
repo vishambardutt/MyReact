@@ -1,3 +1,4 @@
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import React from 'react';
 import About from './About';
 import Contact from './Contact';
@@ -17,11 +18,13 @@ import Childp from './Childp';
 // import Welcome from './Welcome';
 // import LiftingState from './LiftingState';
 import PageNotFound from './PageNotFound';
-import UseComponentDidMount from './UseComponentDidMount';
+// import UseComponentDidMount from './UseComponentDidMount';
+import UseComponentDidUpdate from './LifeCycle/UseComponentDidUpdate';
+import Hooks from './Hooks/Hooks';
 
 function Header() {
   return (
-    <div>
+   
       <div class="container">
         <Router>
           <Navbar bg="dark" variant="dark">
@@ -30,6 +33,7 @@ function Header() {
               <Nav className="me-auto">
                 <Nav.Link><Link class="nav-link" to='/'> Home</Link></Nav.Link>
                 <Nav.Link><Link class="nav-link" to='/about'> About</Link></Nav.Link>
+                <Nav.Link ><Link class="nav-link" to='Hooks/Hooks'>Hooks</Link></Nav.Link>
                 <Nav.Link><Link class="nav-link" to='/contact'> Contact</Link></Nav.Link>
                 <Nav.Link ><Link class="nav-link" to='/users'> User</Link></Nav.Link>
                 <Nav.Link><Link class="nav-link" to='/userdata'> API Call</Link></Nav.Link>
@@ -38,12 +42,14 @@ function Header() {
                 <Nav.Link ><Link class="nav-link" to='/ChangePropsClassComp'>Props Change Class</Link></Nav.Link>
                 <Nav.Link  ><Link class="nav-link" to='/PrintInput'>Print Input</Link></Nav.Link>
                 <Nav.Link ><Link class="nav-link" to='/Childp'>Childp</Link></Nav.Link>
-                <Nav.Link ><Link class="nav-link" to='/UseComponentDidMount'>Component Did Mount</Link></Nav.Link>
+                <Nav.Link ><Link class="nav-link" to='lifeCycle/UseComponentDidUpdate'>Component Did Update</Link></Nav.Link>
+              
                </Nav>
             </Container>
           </Navbar>
           <Routes>
             <Route path="/about" element={<About />} />
+            <Route path="/Hooks/Hooks" element={<Hooks />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/users" element={<Users />} />
             <Route path="/userdata" element={<UserData />} />
@@ -53,15 +59,17 @@ function Header() {
             <Route path="/printinput" element={<PrintInput />} />
             <Route path="/childp" element={<Childp />} />
             <Route path="*" element={<PageNotFound />} />
-            <Route path="*" UseComponentDidMount={<UseComponentDidMount />} />
+            <Route path="Lifecycle/UseComponentDidUpdate" element= {<UseComponentDidUpdate />} />
             <Route path="/" element={<Home />} />
           </Routes>
          </Router>
       </div>
-    </div>
+   
 
   )
 }
+
+//
 
 export default Header;
 
