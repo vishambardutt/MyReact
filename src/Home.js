@@ -28,6 +28,7 @@ import ChangeState from './ChangeState';
 import ConditionalRendering from './ConditionalRendering';
 import ReuseData from './ReuseData';
 import UseComponentDidUpdate from './LifeCycle/UseComponentDidUpdate';
+import ForwardRef from './ForwardRef';
 
 function Home() {
    return (
@@ -92,7 +93,9 @@ function Home() {
        {/* <div class="col-sm-4"><ReuseData name='Vishambar'email='vd@gmail.com' contact='Banglore'/></div> */}
         {/* <div class="col-sm-4"><HOCBlue/></div> */}
       </div>
-      <UseComponentDidUpdate/>
+     <div class="row">
+     // <div class="col-sm-4"><UseComponentDidUpdate/></div> <div class="col-sm-4"><ForwardRef/></div> <div class="col-sm-4"> <RefComponent/></div>
+      </div> 
      
     </div>
 )
