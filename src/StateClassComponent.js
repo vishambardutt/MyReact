@@ -19,8 +19,7 @@ class StateClassComponent extends React.Component {
                 <h4>{this.state.data}</h4>
                 <h4>{this.state.number}</h4>
                 <h4> <Button variant="warning" onClick={() => this.upclass()}>UPDATE DATA</Button></h4>
-               
-               <h4><Button variant="warning" onClick={() => this.number()}>INCRESE DATA</Button></h4>
+             
                 
             </div>
         )

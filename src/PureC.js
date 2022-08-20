@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React,{PureComponent} from 'react';
 
 class PureC extends PureComponent{
     // constructor()
@@ -11,10 +11,11 @@ class PureC extends PureComponent{
 
     render()
     {
-        console.log('PureC render Check')
+        //  console.log('Pure Component render Check')
         return(
             <div>
-                <h5>PureC Component {this.props.count}</h5>
+                <h5>Pure  Component11 </h5>
+                <h5>Count: {this.props.count}</h5>
             </div>
         );
     }

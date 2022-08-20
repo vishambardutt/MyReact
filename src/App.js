@@ -8,7 +8,8 @@ import Footer from './Footer';
 import AccDataFunction from './AccDataFunction';
 // import RenderMethod from './RenderMethod';
 import Button from 'react-bootstrap/Button';
-import NestedList from './NestedList';
+// import NestedList from './NestedList';
+import RefComponent from './RefComponent';
 
 function App() {
   let [name, setName] = React.useState('Vartika')
@@ -29,11 +30,11 @@ function App() {
           {/* </div> */}
           {/* <div class="row"> */}
           {/* <div class="col-sm-4"><UseComponentDidMount/></div><div class="col-sm-4"><UseComponentDidUpdate/></div><div class="col-sm-4"></div> */}
-         <NestedList/>
+         {/* <NestedList/> */}
          
          {/* <h5>{name}</h5> */}
          {/* <Button class="btn btn-danger" onClick={()=>setName('Jakhmola')}>Update Name</Button> */}
-          
+          <RefComponent/>
         <div class="row">
           <Footer />
         </div>

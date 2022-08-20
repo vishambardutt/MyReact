@@ -16,7 +16,7 @@ import LiftingState from './LiftingState';
 import ReuseComponent from './ReuseComponent';
 // import Pc from './Pc';
 import PureComponentinProps from './PureComponentinProps';
-import MemoFunctionComp from './MemoFunctionalComp';
+import MemoFunctionComp from './Hooks/MemoFunctionalComp';
 import ControlledComponent from './ControlledComponent';
 import UnControlledComponent from './UnControlledComponent';
 import RefComponent from './RefComponent';

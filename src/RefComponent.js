@@ -9,7 +9,7 @@ class RefComponent extends React.Component{
     }
     componentDidMount()
     {
-        // console.log(this.forRef.current.value='1000')
+         console.log(this.forRef.current.value='1000')
     }
     getVal()
     {

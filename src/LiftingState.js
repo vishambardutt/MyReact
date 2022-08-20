@@ -1,21 +1,20 @@
 import React from 'react';
 import Member from "./Member";
-function LiftingState() {
+function LiftingState(data) {
 
-    function liftalert(data) {
-        // console.log(data)
-        // alert('data.name');
-        
-     }
+    // let data = 'Vartika Jakhmola'
        
-
+    function Parent(){
+        alert('data')
+    }
     return (
         <div>
             <h6>Lifting State Up</h6>
-            <Member alert = {liftalert} />
+            {/* <Member name={data}/> */}
+            <Member alert={Parent}/>
 
         </div>
-    )
+    );
 }
 export default LiftingState;
 

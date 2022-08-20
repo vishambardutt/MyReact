@@ -1,8 +1,8 @@
-import NavDropdown from 'react-bootstrap/NavDropdown';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 import React from 'react';
 import About from './About';
-import Contact from './Contact';
-import Users from './Users';
+// import Contact from './Contact';
+import MemoFunctionalComp from './Hooks/MemoFunctionalComp';
 import UserData from './UserData';
 import ChangeStateinFunctionalComp from './ChangeStateinFunctionalComp';
 import StateClassComponent from './StateClassComponent';
@@ -21,6 +21,7 @@ import PageNotFound from './PageNotFound';
 // import UseComponentDidMount from './UseComponentDidMount';
 import UseComponentDidUpdate from './LifeCycle/UseComponentDidUpdate';
 import Hooks from './Hooks/Hooks';
+import PureComponentinProps from './PureComponentinProps';
 
 function Header() {
   return (
@@ -31,18 +32,19 @@ function Header() {
             <Container>
               <Navbar.Brand href="#home">Navbar</Navbar.Brand>
               <Nav className="me-auto">
-                <Nav.Link><Link class="nav-link" to='/'> Home</Link></Nav.Link>
-                <Nav.Link><Link class="nav-link" to='/about'> About</Link></Nav.Link>
-                <Nav.Link ><Link class="nav-link" to='Hooks/Hooks'>Hooks</Link></Nav.Link>
-                <Nav.Link><Link class="nav-link" to='/contact'> Contact</Link></Nav.Link>
-                <Nav.Link ><Link class="nav-link" to='/users'> User</Link></Nav.Link>
-                <Nav.Link><Link class="nav-link" to='/userdata'> API Call</Link></Nav.Link>
-                <Nav.Link ><Link class="nav-link" to='/ChangeStateinFunctionalComp'>State in Function</Link></Nav.Link>
-                <Nav.Link ><Link class="nav-link" to='/stateclasscomponent'>State </Link></Nav.Link>
-                <Nav.Link ><Link class="nav-link" to='/ChangePropsClassComp'>Props Change Class</Link></Nav.Link>
-                <Nav.Link  ><Link class="nav-link" to='/PrintInput'>Print Input</Link></Nav.Link>
-                <Nav.Link ><Link class="nav-link" to='/Childp'>Childp</Link></Nav.Link>
-                <Nav.Link ><Link class="nav-link" to='lifeCycle/UseComponentDidUpdate'>Component Did Update</Link></Nav.Link>
+                <Nav.Link><Link className="nav-link" to='/'> Home</Link></Nav.Link>
+                <Nav.Link><Link className="nav-link" to='/about'> About</Link></Nav.Link>
+                <Nav.Link ><Link className="nav-link" to='Hooks/Hooks'>Hooks</Link></Nav.Link>
+                <Nav.Link><Link className="nav-link" to='/PureComponentinProps'> Pure Component</Link></Nav.Link>
+                <Nav.Link ><Link className="nav-link" to='Hooks/MemoFunctionalComp'> Memo</Link></Nav.Link>
+                <Nav.Link><Link className="nav-link" to='/userdata'> API</Link></Nav.Link>
+                <Nav.Link ><Link className="nav-link" to='/ChangeStateinFunctionalComp'>State in Function</Link></Nav.Link>
+                <Nav.Link ><Link className="nav-link" to='/stateclasscomponent'>State </Link></Nav.Link>
+                <Nav.Link ><Link className="nav-link" to='/ChangePropsClassComp'>Props Change Class</Link></Nav.Link>
+                <Nav.Link  ><Link className="nav-link" to='/PrintInput'>Print Input</Link></Nav.Link>
+                <Nav.Link ><Link className="nav-link" to='/Childp'>Childp</Link></Nav.Link>
+                <Nav.Link ><Link className="nav-link" to='lifeCycle/UseComponentDidUpdate'>Did Update</Link></Nav.Link>
+                
               
                </Nav>
             </Container>
@@ -50,8 +52,8 @@ function Header() {
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/Hooks/Hooks" element={<Hooks />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/users" element={<Users />} />
+            <Route path="/PureComponentinProps" element={<PureComponentinProps />} />
+            <Route path="/Hooks/MemoFunctionalComp" element={<MemoFunctionalComp />} />
             <Route path="/userdata" element={<UserData />} />
             <Route path="/ChangeStateinFunctionalComp" element={<ChangeStateinFunctionalComp />} />
             <Route path="/stateclasscomponent" element={<StateClassComponent />} />
