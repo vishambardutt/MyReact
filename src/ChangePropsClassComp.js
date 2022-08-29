@@ -17,7 +17,7 @@ class ChangePropsClassComp extends React.Component {
             <div>
                 <h5>Change state in Class Component</h5>
                 <h6>{this.state.msg}</h6>
-                <h6> <Button class="btn-btn-primary" onClick={this.handleClick}>Change Props</Button></h6>
+                <h6> <Button className="btn-btn-primary" onClick={this.handleClick}>Change Props</Button></h6>
             </div>
         )
     }

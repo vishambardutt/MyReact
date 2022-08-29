@@ -9,6 +9,8 @@ import AccDataFunction from './AccDataFunction';
 // import RenderMethod from './RenderMethod';
 import Button from 'react-bootstrap/Button';
 // import NestedList from './NestedList';
+import PreviousState from './PreviousState';
+
 
 
 function App() {
@@ -34,7 +36,8 @@ function App() {
          
          {/* <h5>{name}</h5> */}
          {/* <Button class="btn btn-danger" onClick={()=>setName('Jakhmola')}>Update Name</Button> */}
-         
+     
+       
         <div class="row">
           <Footer />
         </div>

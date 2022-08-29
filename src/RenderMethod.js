@@ -12,7 +12,7 @@ class RenderMethod extends React.Component {
         return (
             <div>
                 <h5>Render Method</h5>
-                <Button class="btn btn-danger" onClick={() => this.setState({ email: 'vd@test.com' })}>Update Email</Button>
+                <Button className="btn btn-danger" onClick={() => this.setState({ email: 'vd@test.com' })}>Update Email</Button>
 
             </div>
 

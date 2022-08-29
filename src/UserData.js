@@ -7,7 +7,7 @@ function UserData() {
   useEffect(() => {
     fetch('https://dummy.restapiexample.com/api/v1/employees').then((data) => {
       data.json().then(result => {
-        console.log('result', result);
+        // console.log('result', result);
         setUser(result.data);
       })
     })

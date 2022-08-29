@@ -23,7 +23,7 @@ function Myfm(){
                         </select>
                     </div>
                     <div class="col-sm-12"><h6><input type='CheckBox' onChange={(e)=>setTnc(e.target.checked)}/> <span> Terms & Condition</span></h6></div>
-                    <div class="col-sm-12"><Button class="btn-btn-primary" type="Submit" variant='danger'>Submit</Button></div>
+                    <div class="col-sm-12"><Button className="btn-btn-primary" type="Submit" variant='danger'>Submit</Button></div>
                 </form>
             </div>
             )

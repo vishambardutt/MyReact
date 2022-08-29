@@ -29,13 +29,15 @@ import ConditionalRendering from './ConditionalRendering';
 import ReuseData from './ReuseData';
 import UseComponentDidUpdate from './LifeCycle/UseComponentDidUpdate';
 import ForwardRef from './ForwardRef';
+// import DynamicRouting from './DynamicRouting';
+import Api from './Api'
 
 function Home() {
    return (
   <div class="container">
       <h4>Home Component</h4>
       <div class="row">
-        <div class="col-sm-4"><HOCOrange comp ={HighOrder}/></div>
+        <div class="col-sm-4"><HOCOrange comp ={HighOrder} /></div>
         <div class="col-sm-4"><HOCGreen comp ={HighOrder}/></div>
         <div class="col-sm-4"><HOCYellow comp ={HighOrder}/></div>
       </div>
@@ -93,11 +95,13 @@ function Home() {
        {/* <div class="col-sm-4"><ReuseData name='Vishambar'email='vd@gmail.com' contact='Banglore'/></div> */}
         {/* <div class="col-sm-4"><HOCBlue/></div> */}
       </div>
-     <div class="row">
-     // <div class="col-sm-4"><UseComponentDidUpdate/></div> <div class="col-sm-4"><ForwardRef/></div> <div class="col-sm-4"> <RefComponent/></div>
+      <div class="row">
+      <div class="col-sm-4"><UseComponentDidUpdate/></div> <div class="col-sm-4"><ForwardRef/></div> <div class="col-sm-4"> <RefComponent/></div>
       </div> 
-     
-    </div>
+      <div class="row">
+      <div class="col-sm-4"><Api/></div><div class="col-sm-4"></div><div class="col-sm-4"></div>
+      </div>
+      </div>
 )
 }
 
@@ -106,6 +110,7 @@ function HOCOrange(props)
   return(
     <div>
       <h5 style={{backgroundColor:'Orange',height:100}}>Orange<props.comp/></h5>
+      <h6>High Order component  takes function as a props and deliver as component is High Order Function</h6>
     </div>
   );
   
@@ -116,6 +121,7 @@ function HOCGreen(props)
   return(
     <div>
       <h5 style={{backgroundColor:'green',height:100}}>Green<props.comp/></h5>
+      
     </div>
   );
   
@@ -124,7 +130,8 @@ function HOCYellow(props)
 {
   return(
     <div>
-      <h5 style={{backgroundColor:'yellow',height:100}}>Yellow<props.comp/></h5>
+      <h5 style={{backgroundColor:'yellow',height:100}}>Yellow<props.comp/>
+      </h5>
     </div>
   );
   
