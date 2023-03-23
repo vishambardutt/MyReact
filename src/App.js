@@ -5,29 +5,37 @@ import Footer from './Footer';
 // import Abc from './Abc';
 // import GlobalContext from './GlobalContext';
 // import ChangeState from './ChangeState';
-import AccDataFunction from './AccDataFunction';
+// import AccDataFunction from './AccDataFunction';
 // import RenderMethod from './RenderMethod';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 // import NestedList from './NestedList';
-import PreviousState from './PreviousState';
+// import PreviousState from './PreviousState';
+import ParentComponnent from './ParentComponent.';
+// import Profile from './Profile';
+import NestedList from './NestedList';
+
+
 
 
 
 function App() {
-  let [name, setName] = React.useState('Vartika')
-  function getappData()
-  {
-    alert('Hi form app function')
-  }
+  // let [name, setName] = React.useState('Vartika')
+  // function getappData()
+  // {
+  //   alert('Hi form app function')
+  // }
 
   return (
     <div className="App">
       <div class="container">
         <div class="row">
           <Header />
+          {/* <Profile /> */}
         </div>
        
         <div class="row">
+          
+       {/* <ParentComponnent/> */}
           {/* <div class="col-sm-4"><ChangeState/></div><div class="col-sm-4"><AccDataFunction  data={getappData}/></div><div class="col-sm-4"><RenderMethod name={name}/></div> */}
           {/* </div> */}
           {/* <div class="row"> */}
@@ -36,8 +44,8 @@ function App() {
          
          {/* <h5>{name}</h5> */}
          {/* <Button class="btn btn-danger" onClick={()=>setName('Jakhmola')}>Update Name</Button> */}
-     
-       
+    
+       <NestedList />
         <div class="row">
           <Footer />
         </div>

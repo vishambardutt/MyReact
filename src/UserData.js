@@ -1,11 +1,11 @@
 import React, { Fragment, useState, useEffect } from 'react';
-
 import Table from 'react-bootstrap/Table';
 // listing use in react
 function UserData() {
   const [user, setUser] = useState([])
   useEffect(() => {
-    fetch('https://dummy.restapiexample.com/api/v1/employees').then((data) => {
+     fetch('https://dummy.restapiexample.com/api/v1/employees').then((data) => {
+    //  fetch('http://localhost:3000/userdata').then((data) => { 
       data.json().then(result => {
         // console.log('result', result);
         setUser(result.data);

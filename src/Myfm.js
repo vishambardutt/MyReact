@@ -11,10 +11,10 @@ function Myfm(){
     }
     return(
            <div class="row">
-                <div class="col-sm-12"><h6>Form Handling</h6></div>
+                <div className="col-sm-12"><h6>Form Handling</h6></div>
                 <form onSubmit={getFormData}>
-                    <div class="col-sm-12"><input type='text' placeholder='enter name' onChange={(e)=>setName(e.target.value)}/></div>
-                    <div class="col-sm-12">
+                    <div className="col-sm-12"><input type='text' placeholder='enter name' onChange={(e)=>setName(e.target.value)}/></div>
+                    <div className="col-sm-12">
                         <select onChange={(e)=>setHobbies(e.target.value)}>
                         <option>-Select-</option>
                         <option>Milk</option>
@@ -22,8 +22,8 @@ function Myfm(){
                         <option>Curd</option>
                         </select>
                     </div>
-                    <div class="col-sm-12"><h6><input type='CheckBox' onChange={(e)=>setTnc(e.target.checked)}/> <span> Terms & Condition</span></h6></div>
-                    <div class="col-sm-12"><Button className="btn-btn-primary" type="Submit" variant='danger'>Submit</Button></div>
+                    <div className="col-sm-12"><h6><input type='CheckBox' onChange={(e)=>setTnc(e.target.checked)}/> <span> Terms & Condition</span></h6></div>
+                    <div className="col-sm-12"><Button className="btn-btn-primary" type="Submit" variant='danger'>Submit</Button></div>
                 </form>
             </div>
             )

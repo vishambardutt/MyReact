@@ -14,7 +14,7 @@ class LfChid extends React.Component{
             <div>
             <h5>Lf child Component</h5>
             <h5>{this.props.name}</h5>
-            <Button class="btn-btn-primary" onClick={()=>this.setState({email:'Kavita@yahoo.com'})}>Change state</Button>
+            <Button className="btn-btn-primary" onClick={()=>this.setState({email:'Kavita@yahoo.com'})}>Change state</Button>
             </div>
         )
 
